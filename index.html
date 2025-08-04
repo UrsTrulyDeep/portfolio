@@ -7,132 +7,345 @@
     <title>Deep Kushwaha | Full Stack Java Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <!-- Advanced Navigation with Glassmorphism -->
+    <nav class="navbar navbar-expand-lg fixed-top advanced-navbar" id="navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">Deep Kushwaha</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand fw-bold" href="#home">
+                <div class="brand-logo">
+                    <span class="logo-text">DK</span>
+                    <div class="logo-glow"></div>
+                </div>
+            </a>
+            <button class="navbar-toggler advanced-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link advanced-nav-link" href="#home">
+                            <span class="nav-text">Home</span>
+                            <div class="nav-indicator"></div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link advanced-nav-link" href="#about">
+                            <span class="nav-text">About</span>
+                            <div class="nav-indicator"></div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link advanced-nav-link" href="#experience">
+                            <span class="nav-text">Experience</span>
+                            <div class="nav-indicator"></div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link advanced-nav-link" href="#skills">
+                            <span class="nav-text">Skills</span>
+                            <div class="nav-indicator"></div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link advanced-nav-link" href="#projects">
+                            <span class="nav-text">Projects</span>
+                            <div class="nav-indicator"></div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link advanced-nav-link" href="#contact">
+                            <span class="nav-text">Contact</span>
+                            <div class="nav-indicator"></div>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <!-- Advanced Hero Section with 3D Effects -->
+    <section id="home" class="hero-section-advanced">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
         <div class="container">
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-8">
-                    <div class="hero-content">
-                        <h1 class="display-3 fw-bold text-white mb-4">
-                            Hi, I'm <span class="text-primary">Deep Kushwaha</span>
+                    <div class="hero-content-advanced" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="hero-badge">
+                            <span class="badge-text">Available for opportunities</span>
+                            <div class="badge-pulse"></div>
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="title-line">Hi, I'm</span>
+                            <span class="title-highlight">Deep Kushwaha</span>
+                            <span class="title-line">Full Stack Java Developer</span>
                         </h1>
-                        <h2 class="h3 text-light mb-4">Full Stack Java Developer</h2>
-                        <p class="lead text-light mb-4">
-                            Passionate about building scalable microservices, REST APIs, and robust Spring Boot applications. 
-                            Currently working with Tech Mahindra (AT&T) with 2+ years of experience in backend development.
+                        <p class="hero-description">
+                            Crafting scalable microservices and robust applications with cutting-edge technologies. 
+                            Currently architecting solutions at Tech Mahindra (AT&T) with 2+ years of backend expertise.
                         </p>
-                        <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
-                            <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="2">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="10">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="15">0</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary btn-advanced">
+                                <span class="btn-text">View My Work</span>
+                                <div class="btn-glow"></div>
+                            </a>
+                            <a href="#contact" class="btn btn-outline btn-advanced">
+                                <span class="btn-text">Get In Touch</span>
+                                <div class="btn-border"></div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <div class="hero-image">
-                        <i class="fas fa-code fa-8x text-primary"></i>
+                <div class="col-lg-4">
+                    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control control-1"></span>
+                                    <span class="control control-2"></span>
+                                    <span class="control control-3"></span>
+                                </div>
+                                <div class="window-title">portfolio.java</div>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="line-number">1</span>
+                                    <span class="code-text"><span class="keyword">public class</span> <span class="class-name">Portfolio</span> {</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">2</span>
+                                    <span class="code-text">  <span class="keyword">public static void</span> <span class="method-name">main</span>(String[] args) {</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">3</span>
+                                    <span class="code-text">    System.out.println(<span class="string">"Hello, World!"</span>);</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">4</span>
+                                    <span class="code-text">    <span class="comment">// Building amazing things</span></span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">5</span>
+                                    <span class="code-text">  }</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">6</span>
+                                    <span class="code-text">}</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Advanced About Section with 3D Cards -->
+    <section id="about" class="about-section-advanced">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="title-underline"></div>
+                    <h2 class="section-title-advanced" data-aos="fade-up">
+                        <span class="title-prefix">About</span>
+                        <span class="title-main">Me</span>
+                    </h2>
+                    <div class="title-underline-advanced"></div>
                 </div>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="about-content">
-                        <h3 class="mb-4">Backend-Focused Developer</h3>
-                        <p class="lead mb-4">
-                            I'm a dedicated Java developer with expertise in Spring Boot, microservices architecture, and cloud technologies. 
-                            My passion lies in creating efficient, scalable, and secure backend solutions.
-                        </p>
-                        <div class="about-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-server text-primary"></i>
-                                <span>Microservices & REST APIs</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-shield-alt text-primary"></i>
-                                <span>Security-First Development</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-database text-primary"></i>
-                                <span>Database Optimization</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-cloud text-primary"></i>
-                                <span>Cloud & DevOps</span>
+                    <div class="about-content-advanced" data-aos="fade-right" data-aos-duration="800">
+                        <div class="about-card">
+                            <h3 class="about-subtitle">Backend-Focused Developer</h3>
+                            <p class="about-description">
+                                I'm a dedicated Java developer with expertise in Spring Boot, microservices architecture, and cloud technologies. 
+                                My passion lies in creating efficient, scalable, and secure backend solutions that power modern applications.
+                            </p>
+                            <div class="about-highlights-advanced">
+                                <div class="highlight-item-advanced">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>Microservices & REST APIs</h4>
+                                        <p>Building scalable distributed systems</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item-advanced">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>Security-First Development</h4>
+                                        <p>OAuth2, JWT, and Azure Key Vault</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item-advanced">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>Database Optimization</h4>
+                                        <p>Performance tuning and optimization</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item-advanced">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>Cloud & DevOps</h4>
+                                        <p>Azure, Docker, and CI/CD pipelines</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="about-stats">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="stat-card">
-                                    <h3 class="stat-number">2+</h3>
-                                    <p class="stat-label">Years Experience</p>
+                    <div class="about-visual" data-aos="fade-left" data-aos-duration="800">
+                        <div class="stats-grid">
+                            <div class="stat-card-advanced" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="stat-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number-advanced" data-target="2">0</h3>
+                                    <p class="stat-label-advanced">Years Experience</p>
+                                </div>
+                                <div class="stat-glow"></div>
+                            </div>
+                            <div class="stat-card-advanced" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="stat-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number-advanced" data-target="10">0</h3>
+                                    <p class="stat-label-advanced">Projects Completed</p>
+                                </div>
+                                <div class="stat-glow"></div>
+                            </div>
+                            <div class="stat-card-advanced" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="stat-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number-advanced" data-target="15">0</h3>
+                                    <p class="stat-label-advanced">Technologies</p>
+                                </div>
+                                <div class="stat-glow"></div>
+                            </div>
+                            <div class="stat-card-advanced" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="stat-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number-advanced" data-target="100">0</h3>
+                                    <p class="stat-label-advanced">Client Satisfaction</p>
+                                </div>
+                                <div class="stat-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Experience Section with Timeline -->
+    <section id="experience" class="experience-section-advanced">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-advanced" data-aos="fade-up">
+                        <span class="title-prefix">Work</span>
+                        <span class="title-main">Experience</span>
+                    </h2>
+                    <div class="title-underline-advanced"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline-advanced">
+                        <div class="timeline-item-advanced" data-aos="fade-up" data-aos-duration="600">
+                            <div class="timeline-marker">
+                                <div class="marker-dot"></div>
+                                <div class="marker-line"></div>
+                            </div>
+                            <div class="timeline-content-advanced">
+                                <div class="timeline-header-advanced">
+                                    <h4 class="timeline-title">Java Developer</h4>
+                                    <div class="timeline-meta">
+                                        <span class="company-name">Tech Mahindra (AT&T Client)</span>
+                                        <span class="duration">2022 - Present</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul class="timeline-details-advanced">
+                                        <li>Developed and maintained microservices using Spring Boot and REST APIs</li>
+                                        <li>Implemented security features using OAuth2, JWT, and Azure Key Vault</li>
+                                        <li>Worked with Azure cloud services and DevOps practices</li>
+                                        <li>Collaborated with cross-functional teams in an agile environment</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag-advanced">Spring Boot</span>
+                                    <span class="tech-tag-advanced">Azure</span>
+                                    <span class="tech-tag-advanced">OAuth2</span>
+                                    <span class="tech-tag-advanced">JWT</span>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="stat-card">
-                                    <h3 class="stat-number">10+</h3>
-                                    <p class="stat-label">Projects Completed</p>
-                                </div>
+                        </div>
+                        <div class="timeline-item-advanced" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                            <div class="timeline-marker">
+                                <div class="marker-dot"></div>
+                                <div class="marker-line"></div>
                             </div>
-                            <div class="col-6">
-                                <div class="stat-card">
-                                    <h3 class="stat-number">5+</h3>
-                                    <p class="stat-label">Technologies</p>
+                            <div class="timeline-content-advanced">
+                                <div class="timeline-header-advanced">
+                                    <h4 class="timeline-title">Software Developer Intern</h4>
+                                    <div class="timeline-meta">
+                                        <span class="company-name">Various Companies</span>
+                                        <span class="duration">2021 - 2022</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="stat-card">
-                                    <h3 class="stat-number">100%</h3>
-                                    <p class="stat-label">Client Satisfaction</p>
+                                <div class="timeline-body">
+                                    <ul class="timeline-details-advanced">
+                                        <li>Gained hands-on experience with Java, Spring Boot, and database technologies</li>
+                                        <li>Developed full-stack applications using modern web technologies</li>
+                                        <li>Learned version control with Git and collaborative development practices</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag-advanced">Java</span>
+                                    <span class="tech-tag-advanced">Spring Boot</span>
+                                    <span class="tech-tag-advanced">Git</span>
                                 </div>
                             </div>
                         </div>
@@ -142,266 +355,339 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-5 bg-light">
+    <!-- Advanced Skills Section with Interactive Cards -->
+    <section id="skills" class="skills-section-advanced">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Experience</h2>
-                    <div class="title-underline"></div>
+                    <h2 class="section-title-advanced" data-aos="fade-up">
+                        <span class="title-prefix">Skills &</span>
+                        <span class="title-main">Technologies</span>
+                    </h2>
+                    <div class="title-underline-advanced"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-advanced">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Programming Languages</h4>
+                        </div>
+                        <div class="skill-tags-advanced">
+                            <span class="skill-tag-advanced" data-skill="Java">Java</span>
+                            <span class="skill-tag-advanced" data-skill="C/C++">C/C++</span>
+                            <span class="skill-tag-advanced" data-skill="JavaScript">JavaScript</span>
+                            <span class="skill-tag-advanced" data-skill="HTML/CSS">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-advanced">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h4>Frameworks & Libraries</h4>
+                        </div>
+                        <div class="skill-tags-advanced">
+                            <span class="skill-tag-advanced" data-skill="Spring Boot">Spring Boot</span>
+                            <span class="skill-tag-advanced" data-skill="Hibernate">Hibernate</span>
+                            <span class="skill-tag-advanced" data-skill="JPA">JPA</span>
+                            <span class="skill-tag-advanced" data-skill="JSP">JSP</span>
+                            <span class="skill-tag-advanced" data-skill="Servlets">Servlets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-advanced">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h4>Tools & Technologies</h4>
+                        </div>
+                        <div class="skill-tags-advanced">
+                            <span class="skill-tag-advanced" data-skill="Git">Git</span>
+                            <span class="skill-tag-advanced" data-skill="Maven">Maven</span>
+                            <span class="skill-tag-advanced" data-skill="Postman">Postman</span>
+                            <span class="skill-tag-advanced" data-skill="Docker">Docker</span>
+                            <span class="skill-tag-advanced" data-skill="Azure DevOps">Azure DevOps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-category-advanced">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h4>Cloud & Security</h4>
+                        </div>
+                        <div class="skill-tags-advanced">
+                            <span class="skill-tag-advanced" data-skill="Azure">Azure</span>
+                            <span class="skill-tag-advanced" data-skill="Key Vault">Key Vault</span>
+                            <span class="skill-tag-advanced" data-skill="OAuth2">OAuth2</span>
+                            <span class="skill-tag-advanced" data-skill="JWT">JWT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-category-advanced">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Databases</h4>
+                        </div>
+                        <div class="skill-tags-advanced">
+                            <span class="skill-tag-advanced" data-skill="MySQL">MySQL</span>
+                            <span class="skill-tag-advanced" data-skill="PostgreSQL">PostgreSQL</span>
+                            <span class="skill-tag-advanced" data-skill="MongoDB">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-category-advanced">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h4>Methodologies</h4>
+                        </div>
+                        <div class="skill-tags-advanced">
+                            <span class="skill-tag-advanced" data-skill="Agile">Agile</span>
+                            <span class="skill-tag-advanced" data-skill="Scrum">Scrum</span>
+                            <span class="skill-tag-advanced" data-skill="Microservices">Microservices</span>
+                            <span class="skill-tag-advanced" data-skill="REST APIs">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Projects Section with 3D Cards -->
+    <section id="projects" class="projects-section-advanced">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-advanced" data-aos="fade-up">
+                        <span class="title-prefix">Featured</span>
+                        <span class="title-main">Projects</span>
+                    </h2>
+                    <div class="title-underline-advanced"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-advanced">
+                        <div class="card-header-advanced">
+                            <div class="project-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="project-meta">
+                                <h4>E-Commerce App</h4>
+                                <span class="project-type">Spring Boot</span>
+                            </div>
+                        </div>
+                        <div class="card-body-advanced">
+                            <p class="project-description-advanced">
+                                Full-featured e-commerce application with user authentication, product management, 
+                                shopping cart, and payment integration using Spring Boot and JPA.
+                            </p>
+                            <div class="project-tech-advanced">
+                                <span class="tech-tag-advanced">Spring Boot</span>
+                                <span class="tech-tag-advanced">JPA</span>
+                                <span class="tech-tag-advanced">MySQL</span>
+                                <span class="tech-tag-advanced">REST API</span>
+                            </div>
+                        </div>
+                        <div class="card-footer-advanced">
+                            <a href="https://github.com/UrsTrulyDeep/springboot-ecommerce-app" target="_blank" class="btn btn-primary btn-advanced">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-advanced">
+                        <div class="card-header-advanced">
+                            <div class="project-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="project-meta">
+                                <h4>Book CRUD REST API</h4>
+                                <span class="project-type">REST API</span>
+                            </div>
+                        </div>
+                        <div class="card-body-advanced">
+                            <p class="project-description-advanced">
+                                Complete CRUD operations for book management with proper validation, 
+                                error handling, and comprehensive API documentation.
+                            </p>
+                            <div class="project-tech-advanced">
+                                <span class="tech-tag-advanced">Spring Boot</span>
+                                <span class="tech-tag-advanced">Hibernate</span>
+                                <span class="tech-tag-advanced">PostgreSQL</span>
+                                <span class="tech-tag-advanced">Swagger</span>
+                            </div>
+                        </div>
+                        <div class="card-footer-advanced">
+                            <a href="https://github.com/UrsTrulyDeep/book-crud-rest-springboot" target="_blank" class="btn btn-primary btn-advanced">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card-advanced">
+                        <div class="card-header-advanced">
+                            <div class="project-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="project-meta">
+                                <h4>Urban Hitch</h4>
+                                <span class="project-type">Cab Booking App</span>
+                            </div>
+                        </div>
+                        <div class="card-body-advanced">
+                            <p class="project-description-advanced">
+                                Modern cab booking application with real-time tracking, 
+                                driver-rider matching, and secure payment processing.
+                            </p>
+                            <div class="project-tech-advanced">
+                                <span class="tech-tag-advanced">Java</span>
+                                <span class="tech-tag-advanced">Spring Boot</span>
+                                <span class="tech-tag-advanced">WebSocket</span>
+                                <span class="tech-tag-advanced">OAuth2</span>
+                            </div>
+                        </div>
+                        <div class="card-footer-advanced">
+                            <a href="https://github.com/UrsTrulyDeep/UrbanHitch" target="_blank" class="btn btn-primary btn-advanced">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Contact Section with Form -->
+    <section id="contact" class="contact-section-advanced">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-advanced" data-aos="fade-up">
+                        <span class="title-prefix">Get In</span>
+                        <span class="title-main">Touch</span>
+                    </h2>
+                    <div class="title-underline-advanced"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <div class="timeline-header">
-                                    <h4>Java Developer</h4>
-                                    <span class="company">Tech Mahindra (AT&T Client)</span>
-                                    <span class="duration">2022 - Present</span>
-                                </div>
-                                <ul class="timeline-details">
-                                    <li>Developed and maintained microservices using Spring Boot and REST APIs</li>
-                                    <li>Implemented security features using OAuth2, JWT, and Azure Key Vault</li>
-                                    <li>Worked with Azure cloud services and DevOps practices</li>
-                                    <li>Collaborated with cross-functional teams in an agile environment</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <div class="timeline-header">
-                                    <h4>Software Developer Intern</h4>
-                                    <span class="company">Various Companies</span>
-                                    <span class="duration">2021 - 2022</span>
-                                </div>
-                                <ul class="timeline-details">
-                                    <li>Gained hands-on experience with Java, Spring Boot, and database technologies</li>
-                                    <li>Developed full-stack applications using modern web technologies</li>
-                                    <li>Learned version control with Git and collaborative development practices</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Skills & Technologies</h2>
-                    <div class="title-underline"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-code text-primary"></i> Programming Languages</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">C/C++</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-layer-group text-primary"></i> Frameworks & Libraries</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Spring Boot</span>
-                            <span class="skill-tag">Hibernate</span>
-                            <span class="skill-tag">JPA</span>
-                            <span class="skill-tag">JSP</span>
-                            <span class="skill-tag">Servlets</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-tools text-primary"></i> Tools & Technologies</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Maven</span>
-                            <span class="skill-tag">Postman</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Azure DevOps</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-cloud text-primary"></i> Cloud & Security</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Azure</span>
-                            <span class="skill-tag">Key Vault</span>
-                            <span class="skill-tag">OAuth2</span>
-                            <span class="skill-tag">JWT</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-database text-primary"></i> Databases</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-cogs text-primary"></i> Methodologies</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Agile</span>
-                            <span class="skill-tag">Scrum</span>
-                            <span class="skill-tag">Microservices</span>
-                            <span class="skill-tag">REST APIs</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <div class="title-underline"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>E-Commerce App</h4>
-                            <span class="project-type">Spring Boot</span>
-                        </div>
-                        <p class="project-description">
-                            Full-featured e-commerce application with user authentication, product management, 
-                            shopping cart, and payment integration using Spring Boot and JPA.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">JPA</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/UrsTrulyDeep/springboot-ecommerce-app" target="_blank" class="btn btn-sm btn-primary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>Book CRUD REST API</h4>
-                            <span class="project-type">REST API</span>
-                        </div>
-                        <p class="project-description">
-                            Complete CRUD operations for book management with proper validation, 
-                            error handling, and comprehensive API documentation.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">Hibernate</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Swagger</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/UrsTrulyDeep/book-crud-rest-springboot" target="_blank" class="btn btn-sm btn-primary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>Urban Hitch</h4>
-                            <span class="project-type">Cab Booking App</span>
-                        </div>
-                        <p class="project-description">
-                            Modern cab booking application with real-time tracking, 
-                            driver-rider matching, and secure payment processing.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">WebSocket</span>
-                            <span class="tech-tag">OAuth2</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/UrsTrulyDeep/UrbanHitch" target="_blank" class="btn btn-sm btn-primary">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <div class="title-underline"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="contact-info">
+                    <div class="contact-container-advanced">
                         <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="contact-item">
-                                    <i class="fas fa-envelope text-primary"></i>
-                                    <div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="contact-info-card">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
                                         <h5>Email</h5>
                                         <a href="mailto:21deepkushwaha3@gmail.com">21deepkushwaha3@gmail.com</a>
                                     </div>
+                                    <div class="contact-glow"></div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="contact-item">
-                                    <i class="fas fa-phone text-primary"></i>
-                                    <div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="contact-info-card">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
                                         <h5>Phone</h5>
                                         <a href="tel:+916386613507">+91-6386613507</a>
                                     </div>
+                                    <div class="contact-glow"></div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="contact-item">
-                                    <i class="fab fa-linkedin text-primary"></i>
-                                    <div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="contact-info-card">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div class="contact-details">
                                         <h5>LinkedIn</h5>
                                         <a href="https://linkedin.com/in/yourstrulydeep" target="_blank">linkedin.com/in/yourstrulydeep</a>
                                     </div>
+                                    <div class="contact-glow"></div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="contact-item">
-                                    <i class="fab fa-github text-primary"></i>
-                                    <div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="contact-info-card">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="contact-details">
                                         <h5>GitHub</h5>
                                         <a href="https://github.com/UrsTrulyDeep" target="_blank">github.com/UrsTrulyDeep</a>
                                     </div>
+                                    <div class="contact-glow"></div>
                                 </div>
                             </div>
+                        </div>
+                        
+                        <!-- Advanced Contact Form -->
+                        <div class="contact-form-advanced" data-aos="fade-up" data-aos-delay="500">
+                            <form id="contact-form" class="advanced-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-group-advanced">
+                                            <input type="text" id="name" name="name" class="form-control-advanced" required>
+                                            <label for="name" class="form-label-advanced">Your Name</label>
+                                            <div class="form-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-group-advanced">
+                                            <input type="email" id="email" name="email" class="form-control-advanced" required>
+                                            <label for="email" class="form-label-advanced">Your Email</label>
+                                            <div class="form-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="form-group-advanced">
+                                            <input type="text" id="subject" name="subject" class="form-control-advanced" required>
+                                            <label for="subject" class="form-label-advanced">Subject</label>
+                                            <div class="form-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="form-group-advanced">
+                                            <textarea id="message" name="message" class="form-control-advanced" rows="5" required></textarea>
+                                            <label for="message" class="form-label-advanced">Your Message</label>
+                                            <div class="form-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-advanced btn-submit">
+                                            <span class="btn-text">Send Message</span>
+                                            <div class="btn-glow"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -409,19 +695,39 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <!-- Advanced Footer -->
+    <footer class="footer-advanced">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p>&copy; 2024 Deep Kushwaha. All rights reserved.</p>
-                    <p class="mb-0">Built with ❤️ using HTML, CSS, Bootstrap & JavaScript</p>
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <span class="logo-text">DK</span>
+                        </div>
+                        <p class="footer-text">&copy; 2024 Deep Kushwaha. All rights reserved.</p>
+                        <p class="footer-subtext">Built with ❤️ using advanced web technologies</p>
+                        <div class="footer-social">
+                            <a href="https://github.com/UrsTrulyDeep" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/yourstrulydeep" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:21deepkushwaha3@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/script.js"></script>
+</body>
+</html>
+
 </body>
 </html>
