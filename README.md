@@ -39,14 +39,54 @@ portfolio/
 ## 🚀 Quick Start
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/UrsTrulyDeep/portfolio.git
-   cd portfolio
-   ```
+    ```bash
+    git clone https://github.com/UrsTrulyDeep/portfolio.git
+    cd portfolio
+    ```
 
 2. **Open in browser**
-   - Simply open `index.html` in your browser
-   - Or use a local server: `python -m http.server 8000`
+    - Simply open `index.html` in your browser
+    - Or use a local server: `python -m http.server 8000`
+
+## 📧 Contact Form Setup
+
+The contact form uses **EmailJS** to send messages directly to your email. To set it up:
+
+### Step 1: Create EmailJS Account
+1. Go to [emailjs.com](https://www.emailjs.com/) and sign up
+2. Verify your email address
+
+### Step 2: Add Email Service
+1. In EmailJS dashboard, go to **Email Services**
+2. Click **Add New Service**
+3. Choose your email provider (Gmail, Outlook, etc.)
+4. Follow the setup instructions
+
+### Step 3: Create Email Template
+1. Go to **Email Templates**
+2. Click **Create New Template**
+3. Use this template:
+   ```html
+   Subject: New message from {{from_name}} - {{subject}}
+   
+   Name: {{from_name}}
+   Email: {{from_email}}
+   Subject: {{subject}}
+   
+   Message:
+   {{message}}
+   ```
+
+### Step 4: Update JavaScript
+Replace the placeholders in `js/script.js`:
+- `YOUR_PUBLIC_KEY`: Your EmailJS public key
+- `YOUR_SERVICE_ID`: Your email service ID
+- `YOUR_TEMPLATE_ID`: Your email template ID
+
+### Step 5: Test
+1. Fill out the contact form
+2. Click "Send Message"
+3. Check your email for the message
 
 ## 📝 Customization
 

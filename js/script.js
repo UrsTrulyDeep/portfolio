@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 current = target;
                 clearInterval(timer);
             }
-            const suffix = target === 100 ? '%' : target === 2 ? '+' : target === 10 ? '+' : target === 15 ? '+' : '';
+            const suffix = target === 100 ? '%' : target === 2 ? '+' : target === 50 ? '+' : target === 15 ? '+' : '';
             element.textContent = Math.floor(current) + suffix;
         }, 30);
     }
@@ -168,7 +168,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Advanced Contact Form with Validation
+    // Initialize EmailJS
+    emailjs.init("aHbmw-rmfivfUqKC6"); // User's actual Public Key
+    
+    // Advanced Contact Form with Validation and Email Sending
     const contactForm = document.getElementById('contact-form');
     
     if (contactForm) {
@@ -180,8 +183,33 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Advanced form validation
             if (validateForm(data)) {
-                showSuccessMessage();
-                this.reset();
+                // Show loading state
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                // Send email using EmailJS
+                emailjs.send('service_5exixoj', 'template_e9lweam', {
+                    from_name: data.name,
+                    from_email: data.email,
+                    subject: data.subject,
+                    message: data.message,
+                    to_name: 'Deep Kushwaha'
+                })
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    showSuccessMessage();
+                    contactForm.reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    showErrorMessage('Failed to send message. Please try again later.');
+                })
+                .finally(function() {
+                    // Reset button state
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
             }
         });
     }
